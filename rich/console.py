@@ -2483,7 +2483,9 @@ class Console:
                 )
             )
         y = 0
+        lines_emitted = False
         for y, line in enumerate(Segment.split_and_crop_lines(segments, length=width)):
+            lines_emitted = True
             x = 0
             for text, style, _control in line:
                 style = style or Style()
@@ -2537,7 +2539,12 @@ class Console:
                     )
                 x += cell_len(text)
 
-        line_offsets = [line_no * line_height + 1.5 for line_no in range(y)]
+        # `y` is the index of the last emitted line, so the number of lines
+        # actually emitted is `y + 1`. Using `y` alone as a count dropped the
+        # <clipPath> definition for the last line, leaving a dangling
+        # clip-path reference. `lines_emitted` keeps an empty export at zero.
+        line_count = (y + 1) if lines_emitted else 0
+        line_offsets = [line_no * line_height + 1.5 for line_no in range(line_count)]
         lines = "\n".join(
             f"""<clipPath id="{unique_id}-line-{line_no}">
     {make_tag("rect", x=0, y=offset, width=char_width * width, height=line_height + 0.25)}

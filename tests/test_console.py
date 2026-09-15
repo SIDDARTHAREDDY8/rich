@@ -534,7 +534,7 @@ def test_export_html_inline() -> None:
     assert html == expected
 
 
-EXPECTED_SVG = '<svg class="rich-terminal" viewBox="0 0 1238 74.4" xmlns="http://www.w3.org/2000/svg">\n    <!-- Generated with Rich https://www.textualize.io -->\n    <style>\n\n    @font-face {\n        font-family: "Fira Code";\n        src: local("FiraCode-Regular"),\n                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Regular.woff2") format("woff2"),\n                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Regular.woff") format("woff");\n        font-style: normal;\n        font-weight: 400;\n    }\n    @font-face {\n        font-family: "Fira Code";\n        src: local("FiraCode-Bold"),\n                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Bold.woff2") format("woff2"),\n                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Bold.woff") format("woff");\n        font-style: bold;\n        font-weight: 700;\n    }\n\n    .terminal-3526644552-matrix {\n        font-family: Fira Code, monospace;\n        font-size: 20px;\n        line-height: 24.4px;\n        font-variant-east-asian: full-width;\n    }\n\n    .terminal-3526644552-title {\n        font-size: 18px;\n        font-weight: bold;\n        font-family: arial;\n    }\n\n    .terminal-3526644552-r1 { fill: #608ab1;font-weight: bold }\n.terminal-3526644552-r2 { fill: #c5c8c6 }\n    </style>\n\n    <defs>\n    <clipPath id="terminal-3526644552-clip-terminal">\n      <rect x="0" y="0" width="1219.0" height="23.4" />\n    </clipPath>\n    \n    </defs>\n\n    <rect fill="#292929" stroke="rgba(255,255,255,0.35)" stroke-width="1" x="1" y="1" width="1236" height="72.4" rx="8"/><text class="terminal-3526644552-title" fill="#c5c8c6" text-anchor="middle" x="618" y="27">Rich</text>\n            <g transform="translate(26,22)">\n            <circle cx="0" cy="0" r="7" fill="#ff5f57"/>\n            <circle cx="22" cy="0" r="7" fill="#febc2e"/>\n            <circle cx="44" cy="0" r="7" fill="#28c840"/>\n            </g>\n        \n    <g transform="translate(9, 41)" clip-path="url(#terminal-3526644552-clip-terminal)">\n    <rect fill="#cc555a" x="0" y="1.5" width="36.6" height="24.65" shape-rendering="crispEdges"/>\n    <g class="terminal-3526644552-matrix">\n    <text class="terminal-3526644552-r1" x="0" y="20" textLength="36.6" clip-path="url(#terminal-3526644552-line-0)">foo</text><text class="terminal-3526644552-r2" x="48.8" y="20" textLength="61" clip-path="url(#terminal-3526644552-line-0)">Click</text><text class="terminal-3526644552-r2" x="1220" y="20" textLength="12.2" clip-path="url(#terminal-3526644552-line-0)">\n</text>\n    </g>\n    </g>\n</svg>\n'
+EXPECTED_SVG = '<svg class="rich-terminal" viewBox="0 0 1238 74.4" xmlns="http://www.w3.org/2000/svg">\n    <!-- Generated with Rich https://www.textualize.io -->\n    <style>\n\n    @font-face {\n        font-family: "Fira Code";\n        src: local("FiraCode-Regular"),\n                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Regular.woff2") format("woff2"),\n                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Regular.woff") format("woff");\n        font-style: normal;\n        font-weight: 400;\n    }\n    @font-face {\n        font-family: "Fira Code";\n        src: local("FiraCode-Bold"),\n                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Bold.woff2") format("woff2"),\n                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Bold.woff") format("woff");\n        font-style: bold;\n        font-weight: 700;\n    }\n\n    .terminal-3526644552-matrix {\n        font-family: Fira Code, monospace;\n        font-size: 20px;\n        line-height: 24.4px;\n        font-variant-east-asian: full-width;\n    }\n\n    .terminal-3526644552-title {\n        font-size: 18px;\n        font-weight: bold;\n        font-family: arial;\n    }\n\n    .terminal-3526644552-r1 { fill: #608ab1;font-weight: bold }\n.terminal-3526644552-r2 { fill: #c5c8c6 }\n    </style>\n\n    <defs>\n    <clipPath id="terminal-3526644552-clip-terminal">\n      <rect x="0" y="0" width="1219.0" height="23.4" />\n    </clipPath>\n    <clipPath id="terminal-3526644552-line-0">\n    <rect x="0" y="1.5" width="1220" height="24.65"/>\n            </clipPath>\n    </defs>\n\n    <rect fill="#292929" stroke="rgba(255,255,255,0.35)" stroke-width="1" x="1" y="1" width="1236" height="72.4" rx="8"/><text class="terminal-3526644552-title" fill="#c5c8c6" text-anchor="middle" x="618" y="27">Rich</text>\n            <g transform="translate(26,22)">\n            <circle cx="0" cy="0" r="7" fill="#ff5f57"/>\n            <circle cx="22" cy="0" r="7" fill="#febc2e"/>\n            <circle cx="44" cy="0" r="7" fill="#28c840"/>\n            </g>\n        \n    <g transform="translate(9, 41)" clip-path="url(#terminal-3526644552-clip-terminal)">\n    <rect fill="#cc555a" x="0" y="1.5" width="36.6" height="24.65" shape-rendering="crispEdges"/>\n    <g class="terminal-3526644552-matrix">\n    <text class="terminal-3526644552-r1" x="0" y="20" textLength="36.6" clip-path="url(#terminal-3526644552-line-0)">foo</text><text class="terminal-3526644552-r2" x="48.8" y="20" textLength="61" clip-path="url(#terminal-3526644552-line-0)">Click</text><text class="terminal-3526644552-r2" x="1220" y="20" textLength="12.2" clip-path="url(#terminal-3526644552-line-0)">\n</text>\n    </g>\n    </g>\n</svg>\n'
 
 
 def test_export_svg() -> None:
@@ -570,6 +570,49 @@ def test_save_svg() -> None:
         console.save_svg(export_path)
         with open(export_path, "rt", encoding="utf-8") as svg_file:
             assert svg_file.read() == EXPECTED_SVG
+
+
+def test_export_svg_no_dangling_clip_path() -> None:
+    """Every clip-path reference must have a matching <clipPath> definition.
+
+    Regression test for https://github.com/Textualize/rich/issues/4215
+    """
+    import re
+
+    def clip_path_ids_and_refs(svg: str) -> tuple:
+        ids = re.findall(r'<clipPath id="([^"]+)"', svg)
+        refs = sorted(set(re.findall(r'clip-path="url\(#([^)]+)\)"', svg)))
+        return ids, refs
+
+    # Three-line recording: refs for line-0, line-1 and line-2 must all be defined
+    console = Console(record=True, width=100)
+    console.print("alpha")
+    console.print("bravo")
+    console.print("charlie")
+    svg = console.export_svg(title="clip-path regression")
+    ids, refs = clip_path_ids_and_refs(svg)
+    dangling = sorted(set(refs) - set(ids))
+    assert not dangling, f"dangling clip-path references: {dangling}"
+    line_ids = sorted(
+        clip_path_id
+        for clip_path_id in ids
+        if re.fullmatch(r".+-line-\d+", clip_path_id)
+    )
+    assert len(line_ids) == 3
+
+    # One-line recording previously emitted no line clipPaths at all
+    console = Console(record=True, width=100)
+    console.print("one")
+    svg = console.export_svg(title="one line")
+    ids, refs = clip_path_ids_and_refs(svg)
+    assert not (set(refs) - set(ids))
+    assert len([clip_path_id for clip_path_id in ids if "-line-" in clip_path_id]) == 1
+
+    # Empty recording must not emit a spurious line-0 clipPath
+    console = Console(record=True, width=100)
+    svg = console.export_svg(title="empty")
+    ids, _ = clip_path_ids_and_refs(svg)
+    assert not [clip_path_id for clip_path_id in ids if "-line-" in clip_path_id]
 
 
 def test_save_text() -> None:

@@ -11,6 +11,7 @@ The following people have contributed to the development of Rich:
 - [Robin Bowes](https://github.com/yo61)
 - [Dennis Brakhane](https://github.com/brakhane)
 - [Darren Burns](https://github.com/darrenburns)
+- [Siddartha Reddy Chinthala](https://github.com/SIDDARTHAREDDY8)
 - [Ceyda Cinarel](https://github.com/cceyda)
 - [Jim Crist-Harif](https://github.com/jcrist)
 - [Ed Davis](https://github.com/davised)
@@ -101,3 +102,4 @@ The following people have contributed to the development of Rich:
 - [Alex Zheng](https://github.com/alexzheng111)
 - [Sebastian Speitel](https://github.com/SebastianSpeitel)
 - [Kevin Turcios](https://github.com/KRRT7)
+
